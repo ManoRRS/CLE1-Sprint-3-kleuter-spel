@@ -3,10 +3,10 @@
 LiquidCrystal_I2C lcd(0x3E, 16,2 );  // Set the LCD I2C address
 LiquidCrystal_I2C lcd2(0x3E, 16,2 );  // Set the LCD I2C address
 
-bool klik1 = true;
-bool klik2 = false;
-int scoreTeam1 = 0;
-int scoreTeam2 = 0;
+bool klik1 = true; //Als team 1 een punt heeft dan geeft dat door aan deze var
+bool klik2 = true; //Als team 1 een punt heeft dan geeft dat door aan deze var
+int scoreTeam1 = 0; // Dit houdt de punten bij van de team
+int scoreTeam2 = 0; // Dit houdt de punten bij van de team
 void setup() {
   // put your setup code here, to run once:
   lcd.init();
@@ -16,14 +16,14 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(klik1 == true){
+  if(klik1 == true){ 
     scoreTeam1++;
-    lcd.setCursor(0,0);
-      lcd.print("Team1");
-      lcd.clear();
-      lcd.setCursor(0,1); 
+    lcd.setCursor(0,0); // Set de cursor op de eerste rij
+      lcd.print("Team1"); //Print de tekst uit
+      lcd.clear(); //Verwijderd de tekst
+      lcd.setCursor(0,1); //zet de cursor op de 2de rij
       if(scoreTeam1 == 1){
-      lcd.clear();
+      lcd.clear(); 
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
