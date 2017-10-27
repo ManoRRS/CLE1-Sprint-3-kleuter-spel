@@ -22,48 +22,56 @@ void loop() {
       lcd.print("Team1"); //Print de tekst uit
       lcd.clear(); //Verwijderd de tekst
       lcd.setCursor(0,1); //zet de cursor op de 2de rij
+      //Als team1 een punt komt er 'x' op de scherm
       if(scoreTeam1 == 1){
       lcd.clear(); 
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("x");
+      //Als team1 twee punten heeft komt er 'xx' op de scherm te staan
       }else if(scoreTeam1 == 2){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xx");
+      //Als team1 drie punten heeft komt er 'xxx' op de scherm te staan
       }else if(scoreTeam1 == 3){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xxx");
+      //Als team1 vier punten heeft komt er 'xxxx' op de scherm te staan
       }else if(scoreTeam1 == 4){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xxxx");
+      //Als team1 vijf punten heeft komt er 'xxxxx' op de scherm te staan
       }else if(scoreTeam1 == 5){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xxxxx");
+      //Als team1 zes punten heeft komt er 'xxxxxx' op de scherm te staan
       }else if(scoreTeam1 == 6){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xxxxxx");
+      //Als team1 zeven punten heeft komt er 'xxxxxxx' op de scherm te staan
       }else if(scoreTeam1 == 7){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team1");
       lcd.setCursor(0,1);
       lcd.print("xxxxxxx");
+      //Als team1 acht punten heeft komt er 'xxxxxxxx' op de scherm te staan
       }else{
       lcd.clear();
       lcd.setCursor(0,0);
@@ -78,42 +86,49 @@ void loop() {
       lcd.print("Team1");
       lcd.setCursor(0,1);
       delay(1000);  
+      //Als team2 een punt komt er 'x' op de scherm
       if(scoreTeam2 == 1){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("x");
+      //Als team2 twee punten heeft komt er 'xx' op de scherm te staan
       }else if(scoreTeam2 == 2){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("xx");
+        //Als team2 drie punten heeft komt er 'xxx' op de scherm te staan
       }else if(scoreTeam2 == 3){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("xxx");
+        //Als team2 vier punten heeft komt er 'xxxx' op de scherm te staan
       }else if(scoreTeam2 == 4){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("xxxx");
+        //Als team2 vijf punten heeft komt er 'xxxxx' op de scherm te staan
       }else if(scoreTeam2 == 5){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("xxxxx");
+        //Als team2 zes punten heeft komt er 'xxxxxx' op de scherm te staan
       }else if(scoreTeam2 == 6){
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2");
       lcd.setCursor(0,1);
       lcd.print("xxxxxx");
+        //Als team2 zeven punten heeft komt er 'xxxxxxx' op de scherm te staan
       }else if(scoreTeam2 == 7){
       lcd.clear();
       lcd.setCursor(0,0);
@@ -121,6 +136,7 @@ void loop() {
       lcd.setCursor(0,1);
       lcd.print("xxxxxxx");
       }else{
+        //Als team2 acht punten heeft komt er 'xxxxxxxx' op de scherm te staan
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("Team2 Wint!");
